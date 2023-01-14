@@ -1,0 +1,204 @@
+/* variables */
+:root {
+
+    /* NavBar colors */
+    --navBarColor: #013900;
+    --navBarTextColor: #fffffe;
+    --navBarTextColorHover: #f9bc60;
+  
+  /* Text colors -> NavBar colors */
+    --nbTxtDark: #004643;
+    --nbTxtLight: #fffffe;
+    --nbTxtHover: #f9bc60;
+  
+    /* Background colors */
+    --bgLight:#f5f5f5;
+    --bgMedium:#959595;
+    --bgDark:#013900;
+  
+    /* Text colors -> Background colors */
+    --txtLight:#f5f5f5;
+    --txtMedium:#959595;
+    --txtDark:#5e5e5e;
+  
+  }
+  
+  /* Body Css Set */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', 'Anton', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* Typography CSS / Set margin 0 */
+  h1, h2, h3 , h4, h5, h6 {
+    font-family: 'Jura', sans-serif;
+    padding-bottom: 10px;
+    margin: 0;
+    color:var(--nbTxtDark) !important;
+  }
+  p {
+    font-family: 'Jura', sans-serif;
+    padding-bottom: 10px;
+    margin: 0;
+    color:var(--txtDark) !important;
+  }
+  a {
+    font-family: 'Jura', sans-serif;
+    color:var(--txtLight) !important;
+    font-size: medium;
+  }
+  
+  /* Navigation bar */
+  #customNavBar{
+    position: fixed;
+    width: 100%;  
+    z-index: 10;
+    padding: 10px 25px 10px 25px;
+    background-color:var(--navBarColor) !important;  
+    }
+    #customNavBar a {
+      color:var(--navBarTextColor) !important;
+    }
+    #customNavBar a:hover{
+      color:var(--navBarTextColorHover) !important;
+    }
+  
+  /* Hero section */
+  #hero {
+    position: relative;
+    padding: 90px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/topcsspic.jpg");   
+  }
+  #heroJumbotron{
+  background-color: var(--bgLight);
+  border-bottom: 10px solid var(--navBarColor);
+  opacity: 0.8;
+  max-width: 350px;
+  margin-top: 135px;
+  }
+  .rowAlignVert {
+    align-items: center;
+  }
+  .heroImage {
+    float:right;
+    margin-right: 90px;
+  }
+  .customJumbotron {
+    background-color: transparent !important;
+    padding-left: 0;
+  }
+  
+  /* Objective section */
+  #objective {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:var(--bgLight) !important; 
+  }
+  
+  /* Contact section */
+  #contact {
+    position: relative;
+    margin-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:var(--bgLight) !important;     
+  }
+  #contact .card-body .social td > a {
+    color: var(--bgTxtDark) !important;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--txtDark) !important;
+  }
+  #contact .card-body .social td > a:hover {
+    color: var(--nbTxtHover) !important;
+  }
+  #contact .card-body .social td > i {
+    color: var(--bgTxtDark) !important;
+    font-size: 25px;
+    margin-right: 25px;
+    text-align: right;
+    color: var(--txtDark) !important;
+  }
+  
+  /* Projects section */
+  #projects {
+    position: relative;
+    padding: 50px 0;
+    background-color: transparent !important;
+  }
+  
+  /* Skills section */
+  #skills {
+    position: relative;
+    margin-top: -35px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:var(--bgLight) !important;  
+  }
+ 
+   /* Footer section*/
+  .footer-basic {
+    position: relative;
+    margin-top: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color:var(--bgDark) !important;
+    color: var(--txtDark) !important;
+  }
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    background-color:var(--bgLight) !important;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  .footer-basic .social > a {
+    color: var(--bgTxtDark) !important;
+  }
+  .footer-basic .social > a:hover {
+    color: var(--nbTxtHover) !important;
+  }
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:var(--txtMedium) !important;
+    margin-bottom:0;
+  }
+  
+   /* Small devices (landscape phones, 576px and up) */
+  @media screen and (max-width: 575.98px) {
+  
+    #heroJumbotron{
+      max-width: 250px;
+    }  
+    #objective {
+      padding-top: 50px;
+    }
+  
+  }

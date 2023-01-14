@@ -1,50 +1,225 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-
 <head>
+
+  <!-- Meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mandip Nijor // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Mandip Nijor Portfolio</title>
+
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Mandip Nijor</h1>
-    <nav> 
-
-       <a href ="#about">About Me</a>
-       <a href ="#work"> Work</a>
-       <a href ="#contact">Contact</a>
-
+    <a name="top"></a>
+    <!-- Navigation Section -->
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="customNavBar">
+      <a class="navbar-brand" href="#">Mandip Nijor | Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#objective">Objectives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          </ul>
+        </div>
     </nav>
+
+    <!-- Hero Section --> 
+  
+  <header id="hero">
+    <section class="container">
+      <div class="jumbotron" id="heroJumbotron">
+        <h5 class="text-muted">Portfolio</h5>
+        <h2>Mandip Nijor</h2>
+        <p class="card-text">Data Analyst</p>
+        <hr width="250px;" align="left">
+        <p class="card-text"><small class="text-muted">- London -</small></p>
+        <a href="#objective" class="btn btn-secondary btn-sm">Find out more</a>         
+      </div>
+    </section>
   </header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Hey, welcome to my page!</h2>
-    </div>
+  <!-- About me Section -->
+
+  <section id="objective">
+    <section class="container">
+      <div class="row rowAlignVert">
+        <div class="col-sm">
+          <img class="heroImage" src="./images/mandipnijor.jpg" alt="Mandip Nijor picture" style="width:250px;height:auto;">
+        </div>
+        <div class="col-sm">
+          <div class="customJumbotron jumbotron">
+            <h2>Objectives</h2>
+            <br>            
+            <p class="text-muted card-text">I am an experienced Data Analyst with Power BI and SQL skills.</p>
+            <p class="text-muted card-text">I have the ability to work independently as well as part of a team. Attention to detail is my key skill.</p>
+            <p class="text-muted card-text">My objective is to use the skills learnt in this bootcamp to further my career.</p>
+            <br>
+            <a href="#contact" class="btn btn-secondary btn-sm">Contact</a>            
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+  <!-- Skills Section --> 
+  
+  <!-- Software Skills -->
+  <section id="skills">
+    <div class="container">
+      <hr class="my-4">
+      <br>
+      <h2>Skills</h2>
+      <div class="row">        
+        <div class="col-sm">
+          <br>
+          <h2>Software</h2> 
+          <br>         
+          <div class="skillsBar">
+            <h4>Power BI</h4>
+            <div class="skillProgressBar">
+              <div class="skillpowerbi"></div>              
+            </div>
+            <h4>SQL</h4>
+            <div class="skillProgressBar">
+              <div class="skillsql"></div>              
+            </div>
+            <h4>DAX</h4>
+            <div class="skillProgressBar">
+              <div class="skilldax"></div>              
+            </div>
+            <h4>Power Apps</h4>
+            <div class="skillProgressBar">
+              <div class="skillpowerapps"></div>              
+            </div>
+            </div>
+        </div>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+  <!-- Language Skills -->
+  <div class="col-sm">
+    <br> 
+    <h2>Languages</h2>
+    <br>
+    <div class="skillsBar">
+      <h4>English</h4>
+      <div class="skillProgressBar">
+        <div class="skillenglish"></div>              
+      </div>
+      <h4>Punjabi</h4>
+      <div class="skillProgressBar">
+        <div class="skillpunjabi"></div>              
+      </div>
+      <h4>Hindi</h4>
+      <div class="skillProgressBar">
+        <div class="skillhindi"></div>              
+      </div>            
+    </div>
+  </div> 
+</div>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
+</div>
+</section>
+
+<!-- Projects Section -->
+
+<section id="projects">
+  <div class="container">
+    <br>
+    <h2>Latest Projects</h2>
+    <br>
+    <div class="row">        
+
+<!-- Projects #1 -->
+<div class="col">
+  <div class="card mb-3">
+    <img src="./images/mandiprepo.png" alt="Mandip's Repo" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Mandip's Projects</h5>
+      <p class="card-text"></p>Mandip's GitHub Repo</p>
+      <p class="card-text">This Repo will continue to expand with exciting new projects.</p>                        
+      <a href="https://github.com/mandipn?tab=repositories" class="btn btn-secondary btn-sm" target="_blank">Visit Mandip's Repo</a>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+
+<section id="contact">
+  <section class="container">
+    <br>
+    <h2>Contact details</h2>
+     <div class="row">
+       <div class="col-sm">
+        <div class="card-body">
+          <div class="social">
+            <table>
+              <tr>
+                <td align="center"><i class="icon ion-location"></i></td>
+                <td>UK, London</a></td>
+              </tr>
+              <tr>
+                <td align="center"><i class="icon ion-social-linkedin"></i></td>
+                <td><a href="https://www.linkedin.com/in/mandip-nijor-32052829" target="_blank">https://www.linkedin.com/in/mandip-nijor-32052829</a></td>
+              </tr>
+               <tr>
+                <td align="center"><i class="icon ion-email"></i></td>
+                <td><a href="mailto:mandip.nijor@gmail.com" target="_blank">mandip.nijor@gmail.com</a></td>
+              </tr>
+             </table>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+ <!-- Footer / Contact element  -->
+  <!-- made by epicbootstrap -->
+  <footer class="footer-basic">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/mandip-nijor-32052829" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+      <a href="mailto:mandip.nijor@gmail.com" target="_blank"><i class="icon ion-email"></i></a>
+      
+    </div>
+    <div style="text-align: center;">
+        <a href="#top" class="btn btn-secondary btn-sm">Home</a>
+        <a href="#objective" class="btn btn-secondary btn-sm">Objectives</a>
+        <a href="#projects" class="btn btn-secondary btn-sm">Projects</a>
+        <a href="#contact" class="btn btn-secondary btn-sm">Contacts</a>
+        <a href="#skills" class="btn btn-secondary btn-sm">Skills</a>
+    </div>
+    <p class="copyright">Mandip Nijor</p>
+    <p class="copyright">Bootstrap 4</p>
+</footer>  
+
+<!-- Bootstrap Script  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>
